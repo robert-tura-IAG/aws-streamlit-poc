@@ -4,6 +4,11 @@ import plotly.io as pio
 from plotly import graph_objects as go
 from datetime import date
 
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 ##############################################
 ###############Page Navigation################
 ##############################################
