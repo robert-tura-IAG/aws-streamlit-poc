@@ -4,6 +4,9 @@ backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#f0f2f6"
 textColor = "#262730"
 
+[browser]
+showSidebarNavigation = false
+
 [server]
 port = 8501
 enableCORS = false
