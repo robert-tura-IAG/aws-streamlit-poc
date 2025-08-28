@@ -1,15 +1,11 @@
 import pandas as pd
 import numpy as np
+import streamlit as st
 
-
-def get_data_ta_1():
+def get_local_csv_data():
     #Data loading
-    x_values = pd.date_range(start='01/01/2023', end='01/01/2024', periods=12).tolist()
-    y_values = [150, 138, 64, 123, 98, 72, 103, 83, 103, 135, 150, 122]
-    df = pd.DataFrame({
-        'Date': x_values,
-        'Value': y_values
-    })
+    df = pd.read_csv("src/data/aerlingus_llm_enrichment_columns_23-08-2025.csv")
+    df['Date'] = pd.to_datetime(df['issue_date'])
     return df
 
 def enhance_dataframe(df):
