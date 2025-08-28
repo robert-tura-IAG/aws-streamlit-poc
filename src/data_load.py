@@ -4,7 +4,7 @@ import streamlit as st
 
 def get_local_csv_data():
     #Data loading
-    df = pd.read_csv("../data/aerlingus_llm_enrichment_columns_23-08-2025.csv")
+    df = pd.read_csv("src/data/aerlingus_llm_enrichment_columns_23-08-2025.csv")
     df['Date'] = pd.to_datetime(df['issue_date'])
     return df
 
