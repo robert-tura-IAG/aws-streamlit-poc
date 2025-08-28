@@ -1,10 +1,77 @@
 import streamlit as st
 from plotly import graph_objects as go
-from src.data_load import get_data_ta_1, enhance_dataframe
+from src.data_load import get_local_csv_data
+import pandas as pd
+from datetime import date, timedelta
+from src.utils import set_base_session_sates, filter_data
 
-st.markdown("# Timeline Analysis")
+set_base_session_sates()
 
-df = get_data_ta_1()
+# Data Loading
+df = get_local_csv_data().copy()
+# st.dataframe(df)
+
+# Input Selection
+input1, input2, input3, input4 = st.columns(4)
+input5, input6, input7, input8 = st.columns(4)
+
+with input1:
+    date_interval = st.date_input(
+        "Time Window",
+        [st.session_state.end_date, st.session_state.ini_date],
+        min_value=None,
+        max_value=None
+    )
+    st.session_state.end_date = date_interval[0]
+    st.session_state.ini_date = date_interval[1]
+    st.session_state.group = st.checkbox("Group data?", value = True)
+with input2:
+    st.session_state.ac_model = st.multiselect("Select Aircraft Model", 
+                                options = df["ac_model"].unique())
+with input3:
+    st.session_state.ac_description = st.multiselect("Select Aircraft Description", 
+                                options = df["aircraft_description"].unique())
+with input4:
+    st.session_state.reg_number = st.multiselect("Select Registration Number", 
+                                    options = df["ac_registration_id"].unique())
+with input5:
+    st.session_state.finding_source = st.multiselect("Select Finding Source", 
+                                options = df["finding_source"].unique())
+with input6:
+    st.session_state.ata = st.multiselect("Select ATA Code Chapter", 
+                                options = df["ata_chapter_code"].unique())
+with input7:
+    st.session_state.taskcard = st.multiselect("Select Taskcard", 
+                                options = df["task_id"].unique())
+with input8:
+    st.session_state.amm_code = st.multiselect("Select AMM Code", 
+                                    options = df["amm_reference"].unique())
+
+
+filtered_df = filter_data(df)
+
+unique_days = filtered_df['Date'].nunique()
+
+if st.session_state.group:
+    if unique_days > 150:
+        # Group by month
+        filtered_df['period'] = filtered_df['Date'].dt.to_period('M').dt.to_timestamp()
+        group_label = 'Month'
+    elif unique_days > 30:
+        # Group by week
+        filtered_df['period'] = filtered_df['Date'].dt.to_period('W').dt.start_time
+        group_label = 'Week'
+    else:
+        # Group by day
+        filtered_df['period'] = filtered_df['Date'].dt.date
+        group_label = 'Day'
+else:
+    # Group by day
+    filtered_df['period'] = filtered_df['Date'].dt.date
+    group_label = 'Day'
+
+grouped = filtered_df.groupby('period').size().reset_index(name='Count')
+grouped.rename(columns={'period': 'Period'}, inplace=True)
 
 col1, col2, col3 = st.columns([3, 1, 1], vertical_alignment = "center")
 
@@ -12,8 +79,9 @@ with col1:
     fig_1 = go.Figure()
     fig_1.add_trace(
         go.Scatter(
-            x=df['Date'],
-            y=df['Value']
+            x=grouped['Period'],
+            y=grouped['Count'],
+            mode='lines+markers'
         )
     )
     fig_1.update_layout(
@@ -24,7 +92,7 @@ with col1:
     st.plotly_chart(fig_1, config = {'scrollZoom': False})
 
 with col2:
-    st.dataframe(df)
+    st.dataframe(grouped)
 
 with col3:
     st.markdown("###### 💡 **Insights Detectados**")
@@ -35,6 +103,6 @@ with col3:
 
     st.error("🚨 Patrón Crítico:\n\n55 findings críticos en AFT CARGO\n\nRevisar procedimientos de mantenimiento preventivo")
 
-df = enhance_dataframe(df)
+# df = enhance_dataframe(df)
 
-st.dataframe(df)
+st.dataframe(filtered_df)
