@@ -28,7 +28,7 @@ with input2:
     main_groupby_feature = st.selectbox("Main Aggregation", options = aggreagtion_fields)
 with input3:
     second_groupby_feature = st.selectbox("Secondary Aggregation", options = aggreagtion_fields)
-st.text(main_groupby_feature + " vs " + second_groupby_feature)
+
 main_groupby_feature = change_verbose_to_code(main_groupby_feature)
 second_groupby_feature = change_verbose_to_code(second_groupby_feature)
 

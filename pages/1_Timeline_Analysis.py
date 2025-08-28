@@ -9,7 +9,6 @@ set_base_session_sates()
 
 # Data Loading
 df = get_local_csv_data().copy()
-# st.dataframe(df)
 
 # Input Selection
 input1, input2, input3, input4 = st.columns(4)
