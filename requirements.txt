@@ -3,3 +3,13 @@ plotly
 pandas
 numpy
 openpyxl
+pandas
+python-dotenv
+sqlalchemy
+psycopg2-binary
+langchain-openai
+langchain
+langgraph
+langfuse
+comet-ml
+opik
