@@ -63,5 +63,5 @@ def change_verbose_to_code(value: str) -> str:
     elif value == "ATA Code":
         return "ata_chapter_code"
     elif value == "Aircraft Registration":
-        return "ac_registration_id"  # corregido
+        return "ac_registration_id"
     return value

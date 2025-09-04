@@ -25,12 +25,12 @@ with input1:
     st.session_state.ini_date = date_interval[1]
     st.session_state.group = st.checkbox("Group data?", value = True)
 with input2:
-    main_groupby_feature = st.selectbox("Main Aggregation", options = aggreagtion_fields)
+    main_agg = st.selectbox("Main Aggregation", options = aggreagtion_fields)
 with input3:
-    second_groupby_feature = st.selectbox("Secondary Aggregation", options = aggreagtion_fields)
+    secondary_agg = st.selectbox("Secondary Aggregation", options = aggreagtion_fields)
 
-main_groupby_feature = change_verbose_to_code(main_groupby_feature)
-second_groupby_feature = change_verbose_to_code(second_groupby_feature)
+main_groupby_feature = change_verbose_to_code(main_agg)
+second_groupby_feature = change_verbose_to_code(secondary_agg)
 
 
 # Data Grouping
@@ -52,10 +52,10 @@ with col1:
         orientation="h"))
 
     fig.update_layout(
-        title="Top 10 ATA Codes with Most Findings",
+        title=f"Top 10 {main_agg} with Most Findings",
         xaxis_title="Total of Findings",
-        yaxis_title="ATA Code",
-        yaxis=dict(categoryorder="total descending"))
+        yaxis_title=main_agg,
+        yaxis=dict(categoryorder="total descending", type='category'))
 
     st.plotly_chart(fig, use_container_width=True)
 
@@ -82,10 +82,11 @@ with col2:
     colorbar=dict(title="Findings")))
 
     fig.update_layout(
-        title="Findings Severity by ATA Code and Aircraft Type",
-        xaxis_title="Aircraft Type",
-        yaxis_title="ATA Code",
-        xaxis={'tickangle': 15})
+        title=f"Findings Severity by {main_agg} and {secondary_agg}",
+        xaxis_title=secondary_agg,
+        yaxis_title=main_agg,
+        xaxis={'tickangle': 15, 'type': 'category'}, 
+        yaxis=dict(categoryorder="total descending", type='category'))
     
     st.plotly_chart(fig, use_container_width=True)
 
