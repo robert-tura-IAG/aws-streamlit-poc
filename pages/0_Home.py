@@ -22,8 +22,8 @@ set_base_session_sates()
 df = get_local_csv_data().copy()
 
 # -------------------- Filtro de fechas (rango o manual) --------------------
-st.subheader("Filtros")
-mode = st.radio("Modo de fechas", ["Range", "Manual"], horizontal=True)
+st.subheader("Filters")
+mode = st.radio("Date Range", ["Range", "Manual"], horizontal=True)
 
 if mode == "Range":  # <<< antes ponía 'Rango'
     start_default = min(st.session_state.end_date, st.session_state.ini_date)
@@ -228,7 +228,7 @@ with c1:
                .sort_values("#Findings", ascending=False)
         )
         total_for_pct = F_calc if F_calc > 0 else int(loc_df["#Findings"].sum())
-        loc_df["% of findings"] = (100 * loc_df["#Findings"] / max(total_for_pct, 1)).round(2)
+        loc_df["% of Findings"] = (100 * loc_df["#Findings"] / max(total_for_pct, 1)).round(2)
         loc_df.rename(columns={loc_col: "Location"}, inplace=True)
 
         st.markdown("**Distribution by Location**")

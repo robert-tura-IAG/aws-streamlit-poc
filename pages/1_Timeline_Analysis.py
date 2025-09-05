@@ -68,12 +68,15 @@ if st.session_state.group:
         group_label = 'Week'
     else:
         # Group by day
-        filtered_df['period'] = filtered_df['Date'].dt.date
+        filtered_df['period'] = filtered_df['Date'].dt.normalize()
         group_label = 'Day'
 else:
     # Group by day
-    filtered_df['period'] = filtered_df['Date'].dt.date
+    filtered_df['period'] = filtered_df['Date'].dt.normalize()
     group_label = 'Day'
+
+# Then when displaying, format the output
+filtered_df['period'] = filtered_df['period'].dt.strftime('%Y-%m-%d')
 
 grouped = filtered_df.groupby('period').size().reset_index(name='Count')
 grouped.rename(columns={'period': 'Period'}, inplace=True)
@@ -100,14 +103,14 @@ with col2:
     st.dataframe(grouped)
 
 with col3:
-    st.markdown("###### 💡 **Insights Detectados**")
+    st.markdown("###### 💡 **Detected Insights**")
 
-    st.success("🏆 Aeronave Más Eficiente:\n\nEC-MNK con un score de 383.6\n\nPromedio de 26.2h por finding")
+    st.success("🏆 Most Efficient Aircraft:\n\nEC-MNK with a score of 383.6\n\nAverage of 26.2h per finding")
 
-    st.warning("⚠️ Ubicación Más Costosa:\n\nfwd cargo con €11142 promedio\n\nRequiere 89.6h promedio")
+    st.warning("⚠️ Most Expensive Location:\n\nfwd cargo with an average of €11,142\n\nRequires an average of 89.6h")
 
-    st.error("🚨 Patrón Crítico:\n\n55 findings críticos en AFT CARGO\n\nRevisar procedimientos de mantenimiento preventivo")
-
+    st.error("🚨 Critical Pattern:\n\n55 critical findings in AFT CARGO\n\nReview preventive maintenance procedures")
+             
 # df = enhance_dataframe(df)
 
 st.dataframe(filtered_df)

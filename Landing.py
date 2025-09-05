@@ -16,7 +16,7 @@ st.set_page_config(
 pages = [st.Page("pages/0_Home.py", title="🏠 Home"), 
          st.Page("pages/1_Timeline_Analysis.py", title="📈 Timeline Analysis"), 
          st.Page("pages/2_Volume_Analysis.py", title="📊 Volume Analysis"), 
-         st.Page("pages/3_MRO_Analysis.py", title="🛠️ MRO Analysis"), 
+         st.Page("pages/3_Clustering_Analysis.py", title="🔬 Clustering Analysis"), 
          st.Page("pages/4_Chatbot.py", title="🤖 Chatbot")]
 
 pg = st.navigation(pages, position="top")
