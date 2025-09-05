@@ -20,10 +20,10 @@ from sql_agent.app.api.agent import ask_agent
 
 # ---------------- UI ----------------
 st.set_page_config(page_title="Chatbot Findings", layout="wide")
-st.title("💬 Chatbot de Findings")
+st.title("💬 Chatbot of Findings")
 
 # Selector de visualización (la llamada al agente se hace una sola vez por pregunta)
-mode = st.radio("Format:", ["Texto", "SQL"], horizontal=True, index=0)
+mode = st.radio("Format:", ["Text", "SQL"], horizontal=True, index=0)
 
 # Estado
 if "messages" not in st.session_state:
@@ -72,7 +72,7 @@ for msg in st.session_state.messages:
     _render_message(msg, mode)
 
 # Entrada de usuario
-user_msg = st.chat_input("Escribe tu pregunta y pulsa Enter…")
+user_msg = st.chat_input("Write your question and push Enter...")
 
 if user_msg:
     # Evita doble ejecución por rerender
