@@ -17,13 +17,19 @@ input1, input2, input3, input4 = st.columns(4)
 with input1:
     date_interval = st.date_input(
         "Time Window",
-        [st.session_state.end_date, st.session_state.ini_date],
+        (st.session_state.ini_date, st.session_state.end_date),
         min_value=None,
         max_value=None
     )
-    st.session_state.end_date = date_interval[0]
-    st.session_state.ini_date = date_interval[1]
-    st.session_state.group = st.checkbox("Group data?", value = True)
+
+    # Actualiza SOLO cuando el rango está completo (2 fechas)
+    if isinstance(date_interval, (list, tuple)) and len(date_interval) == 2:
+        start, end = sorted(date_interval)
+        st.session_state.ini_date = start
+        st.session_state.end_date = end
+    # Si hay 1 fecha no hacer nada!!!!!!!!!!!!!!!
+
+    st.session_state.group = st.checkbox("Group data?", value=True)
 with input2:
     main_agg = st.selectbox("Main Aggregation", options = aggreagtion_fields)
 with input3:
