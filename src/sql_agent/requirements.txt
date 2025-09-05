@@ -19,4 +19,5 @@ openai>=1.40.0
 
 langfuse>=2.35.0
 comet-ml>=3.43.0
+opik
 

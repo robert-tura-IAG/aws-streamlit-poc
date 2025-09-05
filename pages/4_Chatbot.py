@@ -24,7 +24,6 @@ st.title("💬 Chatbot de Findings")
 
 # Selector de visualización (la llamada al agente se hace una sola vez por pregunta)
 mode = st.radio("Format:", ["Texto", "SQL"], horizontal=True, index=0)
-st.caption("holis")
 
 # Estado
 if "messages" not in st.session_state:
