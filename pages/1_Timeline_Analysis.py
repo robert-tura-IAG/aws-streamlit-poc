@@ -143,7 +143,8 @@ column_rename_map = {
     'description_failure': "Failure Description",
     'failure_type': "Failure Type",
     'failure_risk': "Failure Risk",
-    'extraction_error': "Extraction Error"
+    'extraction_error': "Extraction Error",
+    'period' : 'Period'
 }
 
 show_df = filtered_df.rename(columns=column_rename_map)
