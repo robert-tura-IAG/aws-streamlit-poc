@@ -143,7 +143,7 @@ fig.update_yaxes(automargin=True, range=[0, max_ratio * 1.10], tickformat=".2f")
 fig.update_layout(
     height=480,
     margin=dict(l=20, r=20, t=10, b=40),
-    xaxis_title="task_id",
+    xaxis_title="Task",
     yaxis_title="Ratio (F/E)",
     dragmode="pan",
     uniformtext_minsize=10,
@@ -212,6 +212,7 @@ if (F_top != F_calc) or (E_top != E_calc):
 c1, c2 = st.columns(2)
 
 # --- Location ---
+# --- Location ---
 loc_col = "location" if "location" in task_block.columns else (
     "defect_location" if "defect_location" in task_block.columns else None
 )
@@ -225,11 +226,18 @@ with c1:
             tmp.groupby(loc_col, dropna=False)["finding_id"]
                .nunique()
                .reset_index(name="#Findings")
-               .sort_values("#Findings", ascending=False)
         )
         total_for_pct = F_calc if F_calc > 0 else int(loc_df["#Findings"].sum())
+        # calcula primero el % que muestras
         loc_df["% of Findings"] = (100 * loc_df["#Findings"] / max(total_for_pct, 1)).round(2)
         loc_df.rename(columns={loc_col: "Location"}, inplace=True)
+
+        # ordena por % desc y, en empate, por Location asc
+        loc_df = loc_df.sort_values(
+            by=["% of Findings", "Location"],
+            ascending=[False, True],
+            kind="mergesort"  # estable
+        )
 
         st.markdown("**Distribution by Location**")
         st.dataframe(
@@ -239,11 +247,12 @@ with c1:
             column_config={
                 "Location": st.column_config.TextColumn("Location", width="large"),
                 "#Findings": st.column_config.NumberColumn("#Findings", format="%d", width="small"),
-                "% of findings": st.column_config.NumberColumn("% of findings", format="%.2f %%", width="small"),
+                "% of Findings": st.column_config.NumberColumn("% of Findings", format="%.2f %%", width="small"),
             },
         )
     else:
         st.info("No 'location' nor 'defect_location' column found to compute percentages by location.")
+
 
 # --- Aircraft Model ---
 with c2:
@@ -255,7 +264,7 @@ with c2:
                       .sort_values("#Findings", ascending=False)
         )
         total_for_pct = F_calc if F_calc > 0 else int(mod_df["#Findings"].sum())
-        mod_df["% of findings"] = (100 * mod_df["#Findings"] / max(total_for_pct, 1)).round(2)
+        mod_df["% of Findings"] = (100 * mod_df["#Findings"] / max(total_for_pct, 1)).round(2)
         mod_df.rename(columns={"ac_model": "Aircraft Model"}, inplace=True)
 
         st.markdown("**Distribution by Aircraft Model**")
@@ -266,7 +275,7 @@ with c2:
             column_config={
                 "Aircraft Model": st.column_config.TextColumn("Aircraft Model", width="large"),
                 "#Findings": st.column_config.NumberColumn("#Findings", format="%d", width="small"),
-                "% of findings": st.column_config.NumberColumn("% of findings", format="%.2f %%", width="small"),
+                "% of Findings": st.column_config.NumberColumn("% of Findings", format="%.2f %%", width="small"),
             },
         )
     else:
