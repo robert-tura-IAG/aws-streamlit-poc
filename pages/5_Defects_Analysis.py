@@ -12,10 +12,7 @@ set_base_session_sates()
 # Data Loading
 df = get_local_csv_data().copy()
 
-# Key Metrics Row - First (will be updated after filtering)
-metrics_placeholder = st.empty()
-
-# Input Section - Filters below KPIs
+# Input Section - Filters
 input1, input2, input3, input4 = st.columns(4)
 input5, input6, input7, input8 = st.columns(4)
 
@@ -58,30 +55,8 @@ with input8:
 # Apply filters
 filtered_df = filter_data(df)
 
-# Update metrics with filtered data
-with metrics_placeholder.container():
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        total_defects = len(filtered_df)
-        st.metric("Total Defects", f"{total_defects:,}")
-        
-    with col2:
-        severe_defects = len(filtered_df[filtered_df["failure_risk"] == "SEVERE"])
-        st.metric("Severe Defects", severe_defects, 
-                  delta=f"{(severe_defects/total_defects*100):.1f}%" if total_defects > 0 else "0%")
-        
-    with col3:
-        categories = filtered_df["defect_category"].nunique()
-        st.metric("Defect Categories", categories)
-        
-    with col4:
-        avg_groundtime = filtered_df["estimated_groundtime_minutes"].mean()
-        st.metric("Avg Ground Time", f"{avg_groundtime:.0f} min" if not pd.isna(avg_groundtime) else "N/A")
-
-st.markdown("---")
-
 # Main Analysis Section
-tab1, tab2, tab3, tab4 = st.tabs(["📈 Distribution Analysis", "🗺️ Location & Risk", "⏱️ Timeline Analysis", "🔍 Detailed Insights"])
+tab1, tab2, tab3, tab4 = st.tabs(["Distribution", "By Location", "Timeline", "Task Performance"])
 
 with tab1:
     st.subheader("Defect Categories Distribution")
@@ -138,7 +113,7 @@ with tab1:
         st.plotly_chart(fig_specific, use_container_width=True)
 
 with tab2:
-    st.subheader("Location & Risk Analysis")
+    st.subheader("Defects by Location")
     
     col1, col2 = st.columns(2)
     
@@ -199,7 +174,7 @@ with tab2:
         st.plotly_chart(fig_heat, use_container_width=True)
 
 with tab3:
-    st.subheader("Timeline Analysis")
+    st.subheader("Defects Timeline")
     
     # Controls for timeline analysis
     col_control1, col_control2 = st.columns(2)
@@ -245,11 +220,7 @@ with tab3:
         st.warning("Date information not available for timeline analysis")
 
 with tab4:
-    st.subheader("Detailed Insights")
-    
-    # Task ID Analysis - Full width section
-    st.markdown("#### 📋 Task ID Analysis")
-    st.markdown("Analysis of defects by maintenance task cards")
+    st.subheader("Task Performance")
     
     col1, col2 = st.columns(2)
     
@@ -316,10 +287,8 @@ with tab4:
         
         st.plotly_chart(fig_task_heat, use_container_width=True)
 
-st.markdown("---")
-
 # Detailed Data Table
-st.subheader("📋 Detailed Defects Data")
+st.subheader("Detailed Defects Data")
 
 # Rename columns for better display
 column_rename_map = {
@@ -328,21 +297,17 @@ column_rename_map = {
     'ac_model': "Aircraft Model",
     'defect_category': "Defect Category",
     'defect_specific_code': "Specific Defect",
-    'failure_risk': "Risk Level",
     'location': "Location",
-    'estimated_groundtime_minutes': "Ground Time (min)",
-    'maintenance_type': "Maintenance Type",
     'ata_chapter_code': "ATA Chapter",
     'Date': 'Date'
 }
 
-# Select relevant columns for display
+# Select relevant columns for display (excluding ground time, risk level, and maintenance type)
 display_columns = ['work_order_id', 'ac_registration_id', 'ac_model', 'defect_category', 
-                  'defect_specific_code', 'failure_risk', 'location', 'estimated_groundtime_minutes',
-                  'maintenance_type', 'ata_chapter_code', 'Date']
+                  'defect_specific_code', 'location', 'ata_chapter_code', 'Date']
 
-show_df = filtered_df[display_columns].rename(columns=column_rename_map)
-st.dataframe(show_df, use_container_width=True)
-
-st.markdown("---")
-st.caption("🔧 Defects Analysis Dashboard - Comprehensive analysis of aircraft defects patterns and trends")
+show_df = filtered_df[display_columns].copy()
+# Format Date column to yyyy-mm-dd
+show_df['Date'] = show_df['Date'].dt.strftime('%Y-%m-%d')
+show_df = show_df.rename(columns=column_rename_map)
+st.dataframe(show_df, use_container_width=True, hide_index=True)
