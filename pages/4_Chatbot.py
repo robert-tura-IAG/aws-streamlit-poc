@@ -45,7 +45,7 @@ def _render_message(m: dict, current_mode: str):
     """Pinta un mensaje del historial según el modo actual."""
     with st.chat_message(m.get("role", "assistant")):
         if m.get("role") == "assistant":
-            if current_mode == "Texto":
+            if current_mode == "Text":
                 st.markdown(m.get("content", "") or "_(sin texto)_")
             else:
                 sql = m.get("sql")
