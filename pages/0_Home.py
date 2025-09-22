@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 from plotly import graph_objects as go
 from datetime import date, timedelta
+import json
+import re
+from pathlib import Path
 
 from src.data_load import get_local_csv_data
 from src.utils import set_base_session_sates, filter_data
@@ -18,9 +21,88 @@ except Exception:
 st.set_page_config(page_title="Top 10 Tasks by Findings Ratio", layout="wide")
 set_base_session_sates()
 
+# --------------- MAPEO DE ATAS ------------------------
+@st.cache_data
+def load_ata_map(json_path: str = "utils/ata.json") -> dict:
+    """
+    Carga utils/ata.json y construye un dict:
+        {"01": "Reserved for Airline Use", "05": "TIME LIMITS/MAINTENANCE CHECKS", ...}
+    Soporta tanto un JSON tipo {"ata_chapters": [...]} como una lista directa.
+    """
+    path = Path(json_path)
+    if not path.exists():
+        # fallback por si el proyecto lo tiene en otra carpeta
+        alt = Path("src/utils/ata.json")
+        if alt.exists():
+            path = alt
+        else:
+            st.warning(f"No se encontró {json_path} ni {alt}. No se podrá mapear ATA → nombre.")
+            return {}
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    items = data.get("ata_chapters", data)  # admite lista o dict con clave "ata_chapters"
+    ata_map = {}
+
+    for ch in items:
+        num = ch.get("chapter_number") or ch.get("chapter") or ch.get("code")
+        name = ch.get("chapter_name") or ch.get("name")
+        if not num or not name:
+            continue
+        num_str = str(num).strip()
+        # Normaliza claves de 2 y 3 dígitos para cubrir capítulos 01–99 y 100–115
+        if num_str.isdigit():
+            n = int(num_str)
+            # guarda tanto clave 2 dígitos como 3 si aplica
+            ata_map[str(n).zfill(2)] = name
+            if n >= 100:
+                ata_map[str(n).zfill(3)] = name
+        else:
+            # por si viniera con formato "05" o "05-" etc.
+            m = re.match(r"^(\d{2,3})", num_str)
+            if m:
+                k = m.group(1)
+                ata_map[k] = name
+                ata_map[k.zfill(2)] = name
+                ata_map[k.zfill(3)] = name
+
+    return ata_map
+
+
+def extract_ata_chapter_key(val: object, keys_available: set) -> str | None:
+    """
+    A partir de 'ata_chapter_code' (p.ej. 27, '27-50-00', '071', '115-20', '05-10'),
+    devuelve la clave con la que buscar en ata_map: prioriza 3 dígitos si existe,
+    si no 2 dígitos.
+    """
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return None
+
+    s = str(val).strip()
+    # coge los primeros 3 o 2 dígitos iniciales
+    m = re.match(r"^\D*(\d{2,3})", s)
+    if not m:
+        return None
+    raw = m.group(1)
+
+    # Prueba 3 y 2 dígitos según disponibilidad del mapa
+    cands = []
+    if len(raw) >= 3:
+        cands.append(raw[:3].zfill(3))
+    cands.append(raw[:2].zfill(2))
+
+    for c in cands:
+        if c in keys_available:
+            return c
+    return None
+
+
 # -------------------- Carga de datos --------------------
 df = get_local_csv_data().copy()
 
+# -------------------- CREO EL MAPA DE ATAS --------------------
+ata_map = load_ata_map()
 # -------------------- Filtro de fechas (rango o manual) --------------------
 st.subheader("Filters")
 mode = st.radio("Date Range", ["Range", "Manual"], horizontal=True)
@@ -52,6 +134,24 @@ st.session_state.ini_date = end     # fin
 
 # -------------------- Aplicar filtros --------------------
 filtered_df = filter_data(df).copy()
+
+
+# -------------------- NUEVA COLUMNA BY ATA --------------------
+
+# -------------------- Location by ATA --------------------
+if "ata_chapter_code" in filtered_df.columns and len(ata_map) > 0:
+    keys_available = set(ata_map.keys())
+    filtered_df["location by ata"] = (
+        filtered_df["ata_chapter_code"]
+        .apply(lambda v: ata_map.get(extract_ata_chapter_key(v, keys_available), "no data"))
+        .astype("string")
+    )
+else:
+    filtered_df["location by ata"] = "no data"
+
+
+
+
 
 # Normaliza fechas
 if "Date" in filtered_df.columns:
@@ -150,17 +250,6 @@ fig.update_layout(
     uniformtext_mode="show",
 )
 
-# Cursor "pointer" ------------> NO ME FUNCIONA =(
-# st.markdown(
-#     """
-#     <style>
-#     .js-plotly-plot .plotly .bar,
-#     .js-plotly-plot .plotly .point,
-#     .js-plotly-plot .plotly .bars path { cursor: pointer !important; }
-#     </style>
-#     """,
-#     unsafe_allow_html=True,
-# )
 
 # --- Render & selección ---
 if _HAS_PLOTLY_EVENTS:
@@ -304,6 +393,11 @@ if loc_col:
 else:
     detail_df["Location_out"] = "no data"
 
+if "location by ata" in filtered_df.columns:
+    detail_df["location by ata"] = filtered_df.loc[detail_df.index, "location by ata"].astype("string")
+else:
+    detail_df["location by ata"] = "no data"
+
 # --- Description Failure: elegimos la mejor columna disponible ---
 # orden de preferencia (ajústalo si tu CSV usa otro nombre)
 desc_col = next(
@@ -325,7 +419,8 @@ display_cols_map = {
     "ac_model": "Aircraft Type",        
     "ata_chapter_code": "ATA",           
     "ac_registration_id": "A/C",       
-    "Location_out": "Location",          
+    "Location_out": "Location",     
+    "location by ata": "Location (by ATA)",     
     "Description Failure": "Description Failure",  
    
 }
@@ -335,7 +430,7 @@ sel_keys = [k for k in display_cols_map.keys() if k in detail_df.columns]
 out_df = detail_df[sel_keys].rename(columns=display_cols_map)
 
 # Orden: Date primero; si quieres otro orden, reordena aquí
-desired_order = ["Date", "Task", "Aircraft Type", "ATA", "A/C", "Location", "Description Failure", "exec_id"]
+desired_order = ["Date", "Task", "Aircraft Type", "ATA", "A/C", "Location", "Location (by ATA)", "Description Failure", "exec_id"]
 out_df = out_df[[c for c in desired_order if c in out_df.columns]]
 
 # Ordena por fecha si existe; si no, deja como está

@@ -1,0 +1,3031 @@
+{
+  "ata_chapters": [
+    {
+      "chapter_number": "01",
+      "chapter_name": "Reserved for Airline Use",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "02",
+      "chapter_name": "Reserved for Airline Use",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "03",
+      "chapter_name": "Reserved for Airline Use",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "04",
+      "chapter_name": "Reserved for Airline Use",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "05",
+      "chapter_name": "TIME LIMITS/MAINTENANCE CHECKS",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Time Limits"
+        },
+        {
+          "section": "-20",
+          "title": "Scheduled Maintenance Checks"
+        },
+        {
+          "section": "-30",
+          "title": "Reserved"
+        },
+        {
+          "section": "-40",
+          "title": "Reserved"
+        },
+        {
+          "section": "-50",
+          "title": "Unscheduled Maintenance checks"
+        }
+      ]
+    },
+    {
+      "chapter_number": "06",
+      "chapter_name": "DIMENSIONS AND AREAS",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "07",
+      "chapter_name": "LIFTING AND SHORING",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Jacking"
+        },
+        {
+          "section": "-20",
+          "title": "Shoring"
+        }
+      ]
+    },
+    {
+      "chapter_number": "08",
+      "chapter_name": "LEVELING AND WEIGHING",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Weighing and Balancing"
+        },
+        {
+          "section": "-20",
+          "title": "Leveling"
+        }
+      ]
+    },
+    {
+      "chapter_number": "09",
+      "chapter_name": "TOWING AND TAXIING",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Towing"
+        },
+        {
+          "section": "-20",
+          "title": "Taxiing"
+        }
+      ]
+    },
+    {
+      "chapter_number": "10",
+      "chapter_name": "PARKING, MOORING, STORAGE AND RETURN TO SERVICE",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "11",
+      "chapter_name": "PLACARDS AND MARKINGS",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Exterior Color Schemes and Markings"
+        },
+        {
+          "section": "-20",
+          "title": "Exterior Placards and Markings"
+        },
+        {
+          "section": "-30",
+          "title": "Interior Placards"
+        }
+      ]
+    },
+    {
+      "chapter_number": "12",
+      "chapter_name": "SERVICING - ROUTINE MAINTENANCE",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Replenishing"
+        },
+        {
+          "section": "-20",
+          "title": "Scheduled Servicing"
+        },
+        {
+          "section": "-30",
+          "title": "Unscheduled Servicing"
+        }
+      ]
+    },
+    {
+      "chapter_number": "13",
+      "chapter_name": "Unservicing",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "14",
+      "chapter_name": "Reservicing",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "15",
+      "chapter_name": "Ops Check Good",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "16",
+      "chapter_name": "*Unassigned",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "17",
+      "chapter_name": "*Unassigned",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "18",
+      "chapter_name": "VIBRATION AND NOISE ANALYSIS (HELICOPTER ONLY)",
+      "category": "AIRCRAFT GENERAL",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "GENERAL"
+        },
+        {
+          "section": "-10",
+          "title": "VIBRATION ANALYSIS"
+        },
+        {
+          "section": "-20",
+          "title": "NOISE ANALYSIS"
+        }
+      ]
+    },
+    {
+      "chapter_number": "19",
+      "chapter_name": "*Unassigned",
+      "category": "AIRCRAFT GENERAL",
+      "sections": []
+    },
+    {
+      "chapter_number": "89",
+      "chapter_name": "FLIGHT TEST INSTALLATION",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "20",
+      "chapter_name": "STANDARD PRACTICES - AIRFRAME",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-90",
+          "title": "*Reserved for Airline Use"
+        }
+      ]
+    },
+    {
+      "chapter_number": "21",
+      "chapter_name": "AIR CONDITIONING AND PRESSURIZATION",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "22",
+      "chapter_name": "AUTO FLIGHT",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Autopilot"
+        },
+        {
+          "section": "-20",
+          "title": "Speed-Attitude Correction"
+        },
+        {
+          "section": "-30",
+          "title": "Auto Throttle"
+        },
+        {
+          "section": "-40",
+          "title": "System Monitor"
+        },
+        {
+          "section": "-50",
+          "title": "Aerodynamic Load Alleviating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "23",
+      "chapter_name": "COMMUNICATIONS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Speech Communications"
+        },
+        {
+          "section": "-15",
+          "title": "SATCOM"
+        },
+        {
+          "section": "-20",
+          "title": "Data Transmission and Automatic Calling"
+        },
+        {
+          "section": "-30",
+          "title": "Comfort"
+        },
+        {
+          "section": "-40",
+          "title": "Interphone"
+        },
+        {
+          "section": "-50",
+          "title": "Audio Integrating"
+        },
+        {
+          "section": "-60",
+          "title": "Static Discharging"
+        },
+        {
+          "section": "-70",
+          "title": "Audio & Video Monitoring"
+        },
+        {
+          "section": "-80",
+          "title": "Integrated Automatic"
+        }
+      ]
+    },
+    {
+      "chapter_number": "24",
+      "chapter_name": "ELECTRICAL POWER",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Generator Drive"
+        },
+        {
+          "section": "-20",
+          "title": "AC Generation"
+        },
+        {
+          "section": "-30",
+          "title": "DC Generation"
+        },
+        {
+          "section": "-40",
+          "title": "External Power"
+        },
+        {
+          "section": "-50",
+          "title": "AC Electrical Load Distribution"
+        },
+        {
+          "section": "-60",
+          "title": "DC Electrical Load Distribution"
+        }
+      ]
+    },
+    {
+      "chapter_number": "25",
+      "chapter_name": "EQUIPMENT/FURNISHINGS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-30",
+          "title": "Galley"
+        },
+        {
+          "section": "-40",
+          "title": "Lavatories"
+        },
+        {
+          "section": "-50",
+          "title": "Additional Compartments"
+        },
+        {
+          "section": "-60",
+          "title": "Emergency"
+        },
+        {
+          "section": "-70",
+          "title": "Available"
+        },
+        {
+          "section": "-80",
+          "title": "Insulation"
+        }
+      ]
+    },
+    {
+      "chapter_number": "26",
+      "chapter_name": "FIRE PROTECTION",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Detection"
+        },
+        {
+          "section": "-20",
+          "title": "Extinguishing"
+        },
+        {
+          "section": "-30",
+          "title": "Explosion Suppression"
+        }
+      ]
+    },
+    {
+      "chapter_number": "27",
+      "chapter_name": "FLIGHT CONTROLS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Aileron & Tab"
+        },
+        {
+          "section": "-20",
+          "title": "Rudder & Tab"
+        },
+        {
+          "section": "-30",
+          "title": "Elevator & Tab"
+        },
+        {
+          "section": "-40",
+          "title": "Horizontal Stabilizer"
+        },
+        {
+          "section": "-50",
+          "title": "Flaps"
+        },
+        {
+          "section": "-60",
+          "title": "Spoiler, Drag Devices and Variable Aerodynamic Fairings"
+        },
+        {
+          "section": "-70",
+          "title": "Gust Lock & Dampener"
+        },
+        {
+          "section": "-80",
+          "title": "Lift Augmenting"
+        }
+      ]
+    },
+    {
+      "chapter_number": "28",
+      "chapter_name": "FUEL",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-30",
+          "title": "Dump"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "29",
+      "chapter_name": "HYDRAULIC POWER",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Main"
+        },
+        {
+          "section": "-20",
+          "title": "Auxiliary"
+        },
+        {
+          "section": "-30",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "30",
+      "chapter_name": "ICE AND RAIN PROTECTION",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Airfoil"
+        },
+        {
+          "section": "-20",
+          "title": "Air Intakes"
+        },
+        {
+          "section": "-30",
+          "title": "Pitot and Static"
+        },
+        {
+          "section": "-40",
+          "title": "Windows, Windshields and Doors"
+        },
+        {
+          "section": "-50",
+          "title": "Antennas and Radomes"
+        },
+        {
+          "section": "-60",
+          "title": "Propellers/Rotors"
+        },
+        {
+          "section": "-70",
+          "title": "Water Lines"
+        },
+        {
+          "section": "-80",
+          "title": "Detection"
+        }
+      ]
+    },
+    {
+      "chapter_number": "31",
+      "chapter_name": "INDICATING / RECORDING SYSTEM",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Instrument & Control Panels"
+        },
+        {
+          "section": "-20",
+          "title": "Independent Instruments"
+        },
+        {
+          "section": "-30",
+          "title": "Recorders"
+        },
+        {
+          "section": "-40",
+          "title": "Central Computers"
+        },
+        {
+          "section": "-50",
+          "title": "Central Warning Systems"
+        },
+        {
+          "section": "-60",
+          "title": "Central Display Systems"
+        },
+        {
+          "section": "-70",
+          "title": "Automatic Data Reporting Systems"
+        }
+      ]
+    },
+    {
+      "chapter_number": "32",
+      "chapter_name": "LANDING GEAR",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Main Gear and Doors"
+        },
+        {
+          "section": "-20",
+          "title": "Nose Gear and Doors"
+        },
+        {
+          "section": "-30",
+          "title": "Extension and Retraction"
+        },
+        {
+          "section": "-40",
+          "title": "Wheels and Brakes"
+        },
+        {
+          "section": "-50",
+          "title": "Steering"
+        },
+        {
+          "section": "-60",
+          "title": "Position and Warning"
+        },
+        {
+          "section": "-70",
+          "title": "Supplementary Gear"
+        }
+      ]
+    },
+    {
+      "chapter_number": "33",
+      "chapter_name": "LIGHTS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-30",
+          "title": "Cargo and Service Compartments"
+        },
+        {
+          "section": "-40",
+          "title": "Exterior"
+        },
+        {
+          "section": "-50",
+          "title": "Emergency Lighting"
+        }
+      ]
+    },
+    {
+      "chapter_number": "34",
+      "chapter_name": "NAVIGATION",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Flight Environment"
+        },
+        {
+          "section": "-20",
+          "title": "Attitude & Direction"
+        },
+        {
+          "section": "-30",
+          "title": "Landing and Taxiing Aids"
+        },
+        {
+          "section": "-40",
+          "title": "Independent Position Determining"
+        },
+        {
+          "section": "-50",
+          "title": "Dependent Position Determining"
+        },
+        {
+          "section": "-60",
+          "title": "Flight Management Computing"
+        }
+      ]
+    },
+    {
+      "chapter_number": "35",
+      "chapter_name": "OXYGEN",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Crew"
+        },
+        {
+          "section": "-20",
+          "title": "Passenger"
+        },
+        {
+          "section": "-30",
+          "title": "Portable"
+        }
+      ]
+    },
+    {
+      "chapter_number": "36",
+      "chapter_name": "PNEUMATIC",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-20",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "37",
+      "chapter_name": "VACUUM",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-20",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "38",
+      "chapter_name": "WATER/WASTE",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Potable"
+        },
+        {
+          "section": "-20",
+          "title": "Wash"
+        },
+        {
+          "section": "-30",
+          "title": "Waste Disposal"
+        },
+        {
+          "section": "-40",
+          "title": "Air Supply"
+        }
+      ]
+    },
+    {
+      "chapter_number": "39",
+      "chapter_name": "*Unassigned",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "40",
+      "chapter_name": "*Unassigned",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "41",
+      "chapter_name": "WATER BALLAST",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-20",
+          "title": "Dump"
+        },
+        {
+          "section": "-30",
+          "title": "Indication"
+        }
+      ]
+    },
+    {
+      "chapter_number": "42",
+      "chapter_name": "INTEGRATED MODULAR AVIONICS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "43",
+      "chapter_name": "*Unassigned",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "44",
+      "chapter_name": "CABIN SYSTEMS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Cabin Core System"
+        },
+        {
+          "section": "-20",
+          "title": "Inflight Entertainment System"
+        },
+        {
+          "section": "-30",
+          "title": "External Communication System"
+        },
+        {
+          "section": "-40",
+          "title": "Cabin Mass Memory System"
+        },
+        {
+          "section": "-50",
+          "title": "Cabin Monitoring System"
+        },
+        {
+          "section": "-60",
+          "title": "Miscellaneous Cabin System"
+        }
+      ]
+    },
+    {
+      "chapter_number": "45",
+      "chapter_name": "CENTRAL/DIAGNOSTIC/MAINTENANCE SYSTEM",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-05",
+          "title": "CMS/Aircraft General"
+        },
+        {
+          "section": "-20",
+          "title": "CMS/Airframe Systems"
+        },
+        {
+          "section": "-45",
+          "title": "Central Maintenance System"
+        },
+        {
+          "section": "-50",
+          "title": "CMS/Structures"
+        },
+        {
+          "section": "-60",
+          "title": "CMS/Propellers"
+        },
+        {
+          "section": "-70",
+          "title": "CMS/Power Plant"
+        }
+      ]
+    },
+    {
+      "chapter_number": "46",
+      "chapter_name": "INFORMATION SYSTEMS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Airplane General Information Systems"
+        },
+        {
+          "section": "-20",
+          "title": "Flight Deck Information Systems"
+        },
+        {
+          "section": "-30",
+          "title": "Maintenance Information Systems"
+        },
+        {
+          "section": "-40",
+          "title": "Passenger Cabin Information Systems"
+        },
+        {
+          "section": "-50",
+          "title": "Miscellaneous Information Systems"
+        }
+      ]
+    },
+    {
+      "chapter_number": "47",
+      "chapter_name": "NITROGEN GENERATION SYSTEM",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "48",
+      "chapter_name": "*Unassigned",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": []
+    },
+    {
+      "chapter_number": "49",
+      "chapter_name": "AIRBORNE AUXILIARY POWER",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Power Plant"
+        },
+        {
+          "section": "-20",
+          "title": "Engine"
+        },
+        {
+          "section": "-30",
+          "title": "Engine Fuel and Control"
+        },
+        {
+          "section": "-40",
+          "title": "Ignition/Starting"
+        },
+        {
+          "section": "-50",
+          "title": "Air"
+        },
+        {
+          "section": "-60",
+          "title": "Engine Controls"
+        },
+        {
+          "section": "-70",
+          "title": "Indicating"
+        },
+        {
+          "section": "-80",
+          "title": "Exhaust"
+        },
+        {
+          "section": "-90",
+          "title": "Oil"
+        }
+      ]
+    },
+    {
+      "chapter_number": "50",
+      "chapter_name": "CARGO AND ACCESSORY COMPARTMENTS",
+      "category": "AIRFRAME SYSTEMS",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Cargo Compartments"
+        },
+        {
+          "section": "-20",
+          "title": "Cargo Loading Systems"
+        },
+        {
+          "section": "-30",
+          "title": "Cargo Related Systems"
+        },
+        {
+          "section": "-40",
+          "title": "Available"
+        },
+        {
+          "section": "-50",
+          "title": "Accessory"
+        },
+        {
+          "section": "-60",
+          "title": "Insulation"
+        }
+      ]
+    },
+    {
+      "chapter_number": "51",
+      "chapter_name": "STANDARD PRACTICES AND STRUCTURES - GENERAL",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Investigation, Cleanup and Aerodynamic Smoothness"
+        },
+        {
+          "section": "-20",
+          "title": "Processes"
+        },
+        {
+          "section": "-30",
+          "title": "Materials"
+        },
+        {
+          "section": "-40",
+          "title": "Fasteners"
+        },
+        {
+          "section": "-50",
+          "title": "Support of Airplane for Repair and Alignment Check Procedures"
+        },
+        {
+          "section": "-60",
+          "title": "Control-Surface Balancing"
+        },
+        {
+          "section": "-70",
+          "title": "Repairs"
+        },
+        {
+          "section": "-80",
+          "title": "Electrical Bonding"
+        }
+      ]
+    },
+    {
+      "chapter_number": "52",
+      "chapter_name": "DOORS",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Passenger/Crew"
+        },
+        {
+          "section": "-20",
+          "title": "Emergency Exit"
+        },
+        {
+          "section": "-30",
+          "title": "Cargo"
+        },
+        {
+          "section": "-40",
+          "title": "Service and Miscellaneous"
+        },
+        {
+          "section": "-50",
+          "title": "Fixed Interior"
+        },
+        {
+          "section": "-60",
+          "title": "Entrance Stairs"
+        },
+        {
+          "section": "-70",
+          "title": "Monitoring and Operation / Door Warning"
+        },
+        {
+          "section": "-80",
+          "title": "Landing Gear"
+        }
+      ]
+    },
+    {
+      "chapter_number": "53",
+      "chapter_name": "FUSELAGE",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10..-90",
+          "title": "(As Required) Fuselage Sections"
+        }
+      ]
+    },
+    {
+      "chapter_number": "54",
+      "chapter_name": "NACELLES/PYLONS",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10..-40",
+          "title": "(As Required) Nacelle Section"
+        },
+        {
+          "section": "-50..-80",
+          "title": "(As Required) Pylon"
+        }
+      ]
+    },
+    {
+      "chapter_number": "55",
+      "chapter_name": "STABILIZERS",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Horizontal Stabilizer or Canard"
+        },
+        {
+          "section": "-20",
+          "title": "Elevator"
+        },
+        {
+          "section": "-30",
+          "title": "Vertical Stabilizer"
+        },
+        {
+          "section": "-40",
+          "title": "Rudder"
+        }
+      ]
+    },
+    {
+      "chapter_number": "56",
+      "chapter_name": "WINDOWS",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-30",
+          "title": "Door"
+        },
+        {
+          "section": "-40",
+          "title": "Inspection and Observation"
+        }
+      ]
+    },
+    {
+      "chapter_number": "57",
+      "chapter_name": "WINGS",
+      "category": "STRUCTURE",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Center Wing"
+        },
+        {
+          "section": "-20",
+          "title": "Outer Wing"
+        },
+        {
+          "section": "-30",
+          "title": "Wing Tip"
+        },
+        {
+          "section": "-40",
+          "title": "Leading Edge and Leading Edge Devices"
+        },
+        {
+          "section": "-50",
+          "title": "Trailing Edge and Trailing Edge Devices"
+        },
+        {
+          "section": "-60",
+          "title": "Ailerons and Elevons / Ailerons"
+        },
+        {
+          "section": "-70",
+          "title": "Spoilers"
+        },
+        {
+          "section": "-80",
+          "title": "(as required)"
+        },
+        {
+          "section": "-90",
+          "title": "Wing Folding System"
+        }
+      ]
+    },
+    {
+      "chapter_number": "58",
+      "chapter_name": "*Unassigned",
+      "category": "STRUCTURE",
+      "sections": []
+    },
+    {
+      "chapter_number": "59",
+      "chapter_name": "*Reserved for Airline Use",
+      "category": "STRUCTURE",
+      "sections": []
+    },
+    {
+      "chapter_number": "60",
+      "chapter_name": "STANDARD PRACTICES - PROPELLER/ROTOR",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "61",
+      "chapter_name": "PROPELLERS/PROPULSION",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Propeller Assembly"
+        },
+        {
+          "section": "-20",
+          "title": "Controlling"
+        },
+        {
+          "section": "-30",
+          "title": "Braking"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        },
+        {
+          "section": "-50",
+          "title": "Propulsor Duct"
+        }
+      ]
+    },
+    {
+      "chapter_number": "62",
+      "chapter_name": "ROTOR(S)",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Rotor blades"
+        },
+        {
+          "section": "-20",
+          "title": "Rotor head(s)"
+        },
+        {
+          "section": "-30",
+          "title": "Rotor Shaft(s)/Swashplate Assembly(ies)"
+        },
+        {
+          "section": "-40",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "chapter_number": "63",
+      "chapter_name": "ROTOR DRIVE(S)",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Engine/Gearbox couplings"
+        },
+        {
+          "section": "-20",
+          "title": "Gearbox(es)"
+        },
+        {
+          "section": "-30",
+          "title": "Mounts, attachments"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "64",
+      "chapter_name": "TAIL ROTOR",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Rotor blades"
+        },
+        {
+          "section": "-20",
+          "title": "Rotor head"
+        },
+        {
+          "section": "-30",
+          "title": "Available"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "65",
+      "chapter_name": "TAIL ROTOR DRIVE",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Shafts"
+        },
+        {
+          "section": "-20",
+          "title": "Gearboxes"
+        },
+        {
+          "section": "-30",
+          "title": "Available"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "66",
+      "chapter_name": "FOLDING BLADES/PYLON",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Rotor blades"
+        },
+        {
+          "section": "-20",
+          "title": "Tail pylon"
+        },
+        {
+          "section": "-30",
+          "title": "Controls and Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "67",
+      "chapter_name": "ROTORS FLIGHT CONTROL",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Rotor"
+        },
+        {
+          "section": "-20",
+          "title": "Anti-torque Rotor control (Yaw control)"
+        },
+        {
+          "section": "-30",
+          "title": "Servo-control System"
+        }
+      ]
+    },
+    {
+      "chapter_number": "68",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "69",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "70",
+      "chapter_name": "STANDARD PRACTICES - ENGINES",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "71",
+      "chapter_name": "POWER PLANT",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Cowling"
+        },
+        {
+          "section": "-20",
+          "title": "Mounts"
+        },
+        {
+          "section": "-30",
+          "title": "Fireseals"
+        },
+        {
+          "section": "-40",
+          "title": "Attach Fittings"
+        },
+        {
+          "section": "-50",
+          "title": "Electrical Harness"
+        },
+        {
+          "section": "-60",
+          "title": "Air Intakes"
+        },
+        {
+          "section": "-70",
+          "title": "Engine Drains"
+        }
+      ]
+    },
+    {
+      "chapter_number": "72",
+      "chapter_name": "ENGINE - TURBINE/TURBO PROP DUCTED FAN/UNDUCTED FAN",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Reduction Gear, Shaft Section (Turbo-Prop and/or Front Mounted Gear Driven Propulsor)"
+        },
+        {
+          "section": "-20",
+          "title": "Air Inlet Section"
+        },
+        {
+          "section": "-30",
+          "title": "Compressor Section"
+        },
+        {
+          "section": "-40",
+          "title": "Combustion Section"
+        },
+        {
+          "section": "-50",
+          "title": "Turbine Section"
+        },
+        {
+          "section": "-60",
+          "title": "Accessory Drives"
+        },
+        {
+          "section": "-70",
+          "title": "By-pass Section"
+        },
+        {
+          "section": "-80",
+          "title": "Propulsor Section (Rear Mounted)"
+        }
+      ]
+    },
+    {
+      "chapter_number": "73",
+      "chapter_name": "ENGINE - FUEL AND CONTROL",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-20",
+          "title": "Controlling"
+        },
+        {
+          "section": "-30",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "74",
+      "chapter_name": "IGNITION",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Electrical Power / Electrical Power Supply"
+        },
+        {
+          "section": "-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-30",
+          "title": "Switching"
+        }
+      ]
+    },
+    {
+      "chapter_number": "75",
+      "chapter_name": "AIR (BLEED AIR)",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Engine Anti-Icing"
+        },
+        {
+          "section": "-20",
+          "title": "Cooling"
+        },
+        {
+          "section": "-30",
+          "title": "Compressor Control"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "76",
+      "chapter_name": "ENGINE CONTROLS",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Power Control"
+        },
+        {
+          "section": "-20",
+          "title": "Emergency Shutdown"
+        }
+      ]
+    },
+    {
+      "chapter_number": "77",
+      "chapter_name": "ENGINE INDICATING",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Power"
+        },
+        {
+          "section": "-20",
+          "title": "Temperature"
+        },
+        {
+          "section": "-30",
+          "title": "Analyzers"
+        },
+        {
+          "section": "-40",
+          "title": "Integrated Engine Instrument Systems"
+        }
+      ]
+    },
+    {
+      "chapter_number": "78",
+      "chapter_name": "EXHAUST",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Collector/Nozzle"
+        },
+        {
+          "section": "-20",
+          "title": "Noise Suppressor"
+        },
+        {
+          "section": "-30",
+          "title": "Thrust Reverser"
+        },
+        {
+          "section": "-40",
+          "title": "Supplementary Air"
+        }
+      ]
+    },
+    {
+      "chapter_number": "79",
+      "chapter_name": "OIL",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-30",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "80",
+      "chapter_name": "STARTING",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Cranking"
+        }
+      ]
+    },
+    {
+      "chapter_number": "81",
+      "chapter_name": "TURBINES (RECIPROCATING ENGINES) / POWER RECOVERY",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Power Recovery"
+        },
+        {
+          "section": "-20",
+          "title": "Turbo-Supercharger"
+        }
+      ]
+    },
+    {
+      "chapter_number": "82",
+      "chapter_name": "ENGINE WATER INJECTION",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-30",
+          "title": "Dumping and Purging"
+        },
+        {
+          "section": "-40",
+          "title": "Indicating"
+        }
+      ]
+    },
+    {
+      "chapter_number": "83",
+      "chapter_name": "ACCESSORY GEARBOXES",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Drive Shaft Section"
+        },
+        {
+          "section": "-20",
+          "title": "Gearbox Section"
+        }
+      ]
+    },
+    {
+      "chapter_number": "84",
+      "chapter_name": "PROPULSION AUGMENTATION",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Jet Assist Takeoff"
+        }
+      ]
+    },
+    {
+      "chapter_number": "85",
+      "chapter_name": "FUEL CELL SYSTEMS / RECIPROCATING ENGINE",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00",
+          "title": "General"
+        },
+        {
+          "section": "-10",
+          "title": "Fuel Cell Stack"
+        }
+      ]
+    },
+    {
+      "chapter_number": "86",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "87",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "88",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "90",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "91",
+      "chapter_name": "CHARTS",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "92",
+      "chapter_name": "Electrical System Installation / *Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "93",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "94",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "95",
+      "chapter_name": "*Reserved for Airline Use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "96",
+      "chapter_name": "*Reserved for Airline Use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "97",
+      "chapter_name": "WIRING REPORTING",
+      "category": "POWER PLANT",
+      "sections": [
+        {
+          "section": "-00-00",
+          "title": "General"
+        },
+        {
+          "section": "-01-00",
+          "title": "Zone 100 Fuselage Lower"
+        },
+        {
+          "section": "-02-00",
+          "title": "Zone 200 Fuselage Top"
+        },
+        {
+          "section": "-03-00",
+          "title": "Zone 300 Stabilizers"
+        },
+        {
+          "section": "-04-00",
+          "title": "Zone 400 Nacelles-Pylons"
+        },
+        {
+          "section": "-05-00",
+          "title": "Zone 500 Left Wing"
+        },
+        {
+          "section": "-06-00",
+          "title": "Zone 600 Right Wing"
+        },
+        {
+          "section": "-07-00",
+          "title": "Zone 700 Landing Gear Compartment"
+        },
+        {
+          "section": "-08-00",
+          "title": "Zone 800 Doors"
+        },
+        {
+          "section": "-09-00",
+          "title": "Zone 900 Lavatories & Galleys"
+        },
+        {
+          "section": "-20-00",
+          "title": "Electrical Standard Items/Practices"
+        },
+        {
+          "section": "-21-00",
+          "title": "Air Conditioning - General"
+        },
+        {
+          "section": "-21-10",
+          "title": "Compression"
+        },
+        {
+          "section": "-21-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-21-30",
+          "title": "Pressurization Control"
+        },
+        {
+          "section": "-21-40",
+          "title": "Heating"
+        },
+        {
+          "section": "-21-50",
+          "title": "Cooling"
+        },
+        {
+          "section": "-21-60",
+          "title": "Temperature Control"
+        },
+        {
+          "section": "-21-70",
+          "title": "Moisture/Air Contaminant Control"
+        },
+        {
+          "section": "-22-00",
+          "title": "Auto Flight - General"
+        },
+        {
+          "section": "-22-10",
+          "title": "Autopilot"
+        },
+        {
+          "section": "-22-20",
+          "title": "Speed - Attitude Correction"
+        },
+        {
+          "section": "-22-30",
+          "title": "Auto Throttle"
+        },
+        {
+          "section": "-22-40",
+          "title": "System Monitors"
+        },
+        {
+          "section": "-22-50",
+          "title": "Aerodynamic Load Alleviating"
+        },
+        {
+          "section": "-23-00",
+          "title": "Communications - General"
+        },
+        {
+          "section": "-23-10",
+          "title": "Speech Communications"
+        },
+        {
+          "section": "-23-15",
+          "title": "SATCOM"
+        },
+        {
+          "section": "-23-20",
+          "title": "Data Transmission and Automatic Calling"
+        },
+        {
+          "section": "-23-30",
+          "title": "Passenger Address, Entertainment and Comfort"
+        },
+        {
+          "section": "-23-40",
+          "title": "Interphone"
+        },
+        {
+          "section": "-23-50",
+          "title": "Audio Integrating"
+        },
+        {
+          "section": "-23-60",
+          "title": "Static Discharging"
+        },
+        {
+          "section": "-23-70",
+          "title": "Audio and Video Monitoring"
+        },
+        {
+          "section": "-23-80",
+          "title": "Integrated Automatic Tuning"
+        },
+        {
+          "section": "-24-00",
+          "title": "Electrical Power - General"
+        },
+        {
+          "section": "-24-10",
+          "title": "Generator Drive"
+        },
+        {
+          "section": "-24-20",
+          "title": "AC Generation"
+        },
+        {
+          "section": "-24-30",
+          "title": "DC Generation"
+        },
+        {
+          "section": "-24-40",
+          "title": "External Power"
+        },
+        {
+          "section": "-24-50",
+          "title": "AC Electrical Load Distribution"
+        },
+        {
+          "section": "-24-60",
+          "title": "DC Electrical Load Distribution"
+        },
+        {
+          "section": "-25-00",
+          "title": "Equipment/Furnishings - General"
+        },
+        {
+          "section": "-25-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-25-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-25-30",
+          "title": "Galley"
+        },
+        {
+          "section": "-25-40",
+          "title": "Lavatories"
+        },
+        {
+          "section": "-25-60",
+          "title": "Emergency"
+        },
+        {
+          "section": "-25-80",
+          "title": "Insulation"
+        },
+        {
+          "section": "-26-00",
+          "title": "Fire Protection - General"
+        },
+        {
+          "section": "-26-10",
+          "title": "Detection"
+        },
+        {
+          "section": "-26-20",
+          "title": "Extinguishing"
+        },
+        {
+          "section": "-26-30",
+          "title": "Explosion Suppression"
+        },
+        {
+          "section": "-27-00",
+          "title": "Flight Controls - General"
+        },
+        {
+          "section": "-27-10",
+          "title": "Aileron & Tab"
+        },
+        {
+          "section": "-27-20",
+          "title": "Rudder & Tab"
+        },
+        {
+          "section": "-27-30",
+          "title": "Elevator & Tab"
+        },
+        {
+          "section": "-27-40",
+          "title": "Horizontal Stabilizer"
+        },
+        {
+          "section": "-27-50",
+          "title": "Flaps"
+        },
+        {
+          "section": "-27-60",
+          "title": "Spoiler, Drag Devices and Variable Aerodynamic Fairings"
+        },
+        {
+          "section": "-27-70",
+          "title": "Gust Lock & Dampener"
+        },
+        {
+          "section": "-27-80",
+          "title": "Lift Augmenting"
+        },
+        {
+          "section": "-28-00",
+          "title": "Fuel - General"
+        },
+        {
+          "section": "-28-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-28-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-28-30",
+          "title": "Dump"
+        },
+        {
+          "section": "-28-40",
+          "title": "Indicating"
+        },
+        {
+          "section": "-29-00",
+          "title": "Hydraulic Power - General"
+        },
+        {
+          "section": "-29-10",
+          "title": "Main"
+        },
+        {
+          "section": "-29-20",
+          "title": "Auxiliary"
+        },
+        {
+          "section": "-29-30",
+          "title": "Indicating"
+        },
+        {
+          "section": "-30-00",
+          "title": "Ice and Rain Protection - General"
+        },
+        {
+          "section": "-30-10",
+          "title": "Airfoil"
+        },
+        {
+          "section": "-30-20",
+          "title": "Air Intakes"
+        },
+        {
+          "section": "-30-30",
+          "title": "Pitot and Static"
+        },
+        {
+          "section": "-30-40",
+          "title": "Windows, Windshields and Doors"
+        },
+        {
+          "section": "-30-50",
+          "title": "Antennas And Radomes"
+        },
+        {
+          "section": "-30-60",
+          "title": "Propellers/Rotors"
+        },
+        {
+          "section": "-30-70",
+          "title": "Water Lines"
+        },
+        {
+          "section": "-30-80",
+          "title": "Detection"
+        },
+        {
+          "section": "-31-00",
+          "title": "Indicating/Recording Systems - General"
+        },
+        {
+          "section": "-31-10",
+          "title": "Instrument and Control Panels"
+        },
+        {
+          "section": "-31-20",
+          "title": "Independent Instruments"
+        },
+        {
+          "section": "-31-30",
+          "title": "Recorders"
+        },
+        {
+          "section": "-31-40",
+          "title": "Central Computers"
+        },
+        {
+          "section": "-31-50",
+          "title": "Central Warning Systems"
+        },
+        {
+          "section": "-31-60",
+          "title": "Central Display Systems"
+        },
+        {
+          "section": "-31-70",
+          "title": "Automatic Data Reporting Systems"
+        },
+        {
+          "section": "-32-00",
+          "title": "Landing Gear - General"
+        },
+        {
+          "section": "-32-10",
+          "title": "Main Gear and Doors"
+        },
+        {
+          "section": "-32-20",
+          "title": "Nose Gear and Doors"
+        },
+        {
+          "section": "-32-30",
+          "title": "Extension and Retraction"
+        },
+        {
+          "section": "-32-40",
+          "title": "Wheels and Brakes"
+        },
+        {
+          "section": "-32-50",
+          "title": "Steering"
+        },
+        {
+          "section": "-32-60",
+          "title": "Position And Warning"
+        },
+        {
+          "section": "-32-70",
+          "title": "Supplementary Gear"
+        },
+        {
+          "section": "-33-00",
+          "title": "Lights - General"
+        },
+        {
+          "section": "-33-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-33-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-33-30",
+          "title": "Cargo and Service Compartments"
+        },
+        {
+          "section": "-33-40",
+          "title": "Exterior"
+        },
+        {
+          "section": "-33-50",
+          "title": "Emergency Lighting"
+        },
+        {
+          "section": "-34-00",
+          "title": "Navigation - General"
+        },
+        {
+          "section": "-34-10",
+          "title": "Flight Environment Data"
+        },
+        {
+          "section": "-34-20",
+          "title": "Attitude & Direction"
+        },
+        {
+          "section": "-34-30",
+          "title": "Landing and Taxiing Aids"
+        },
+        {
+          "section": "-34-40",
+          "title": "Independent Position Determining"
+        },
+        {
+          "section": "-34-50",
+          "title": "Dependent Position Determining"
+        },
+        {
+          "section": "-34-60",
+          "title": "Flight Management Computing"
+        },
+        {
+          "section": "-35-00",
+          "title": "Oxygen - General"
+        },
+        {
+          "section": "-35-10",
+          "title": "Crew"
+        },
+        {
+          "section": "-35-20",
+          "title": "Passenger"
+        },
+        {
+          "section": "-35-30",
+          "title": "Portable"
+        },
+        {
+          "section": "-36-00",
+          "title": "Pneumatic - General"
+        },
+        {
+          "section": "-36-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-36-20",
+          "title": "Indicating"
+        },
+        {
+          "section": "-37-00",
+          "title": "Vacuum - General"
+        },
+        {
+          "section": "-37-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-37-20",
+          "title": "Indicating"
+        },
+        {
+          "section": "-38-00",
+          "title": "Water/Waste - General"
+        },
+        {
+          "section": "-38-10",
+          "title": "Potable"
+        },
+        {
+          "section": "-38-20",
+          "title": "Wash"
+        },
+        {
+          "section": "-38-30",
+          "title": "Waste Disposal"
+        },
+        {
+          "section": "-38-40",
+          "title": "Air Supply"
+        },
+        {
+          "section": "-44-00",
+          "title": "Cabin Systems - General"
+        },
+        {
+          "section": "-44-10",
+          "title": "Cabin Core System"
+        },
+        {
+          "section": "-44-20",
+          "title": "In-flight Entertainment System"
+        },
+        {
+          "section": "-44-30",
+          "title": "External Communication System"
+        },
+        {
+          "section": "-44-40",
+          "title": "Cabin Mass Memory System"
+        },
+        {
+          "section": "-44-50",
+          "title": "Cabin Monitoring System"
+        },
+        {
+          "section": "-44-60",
+          "title": "Miscellaneous Cabin System"
+        },
+        {
+          "section": "-45-00",
+          "title": "Central Maintenance System (CMS) General"
+        },
+        {
+          "section": "-45-05",
+          "title": "CMS/Aircraft General"
+        },
+        {
+          "section": "-45-20",
+          "title": "CMS/Airframe Systems"
+        },
+        {
+          "section": "-45-45",
+          "title": "Central Maintenance System"
+        },
+        {
+          "section": "-45-50",
+          "title": "CMS/Structures"
+        },
+        {
+          "section": "-45-60",
+          "title": "CMS/Propellers"
+        },
+        {
+          "section": "-45-70",
+          "title": "CMS/Power Plant"
+        },
+        {
+          "section": "-46-00",
+          "title": "Information Systems - General"
+        },
+        {
+          "section": "-46-10",
+          "title": "Airplane General Information Systems"
+        },
+        {
+          "section": "-46-20",
+          "title": "Flight Deck Information Systems"
+        },
+        {
+          "section": "-46-30",
+          "title": "Maintenance Information Systems"
+        },
+        {
+          "section": "-46-40",
+          "title": "Passenger Cabin Information Systems"
+        },
+        {
+          "section": "-46-50",
+          "title": "Miscellaneous Information Systems"
+        },
+        {
+          "section": "-49-00",
+          "title": "Airborne Auxiliary Power - General"
+        },
+        {
+          "section": "-49-10",
+          "title": "Power Plant"
+        },
+        {
+          "section": "-49-20",
+          "title": "Engine"
+        },
+        {
+          "section": "-49-30",
+          "title": "Engine Fuel And Control"
+        },
+        {
+          "section": "-49-40",
+          "title": "Ignition And Starting"
+        },
+        {
+          "section": "-49-50",
+          "title": "Air"
+        },
+        {
+          "section": "-49-60",
+          "title": "Engine Controls"
+        },
+        {
+          "section": "-49-70",
+          "title": "Indicating"
+        },
+        {
+          "section": "-49-80",
+          "title": "Exhaust"
+        },
+        {
+          "section": "-49-90",
+          "title": "Oil"
+        },
+        {
+          "section": "-50-00",
+          "title": "Cargo And Accessory Compartments General"
+        },
+        {
+          "section": "-50-10",
+          "title": "Cargo Compartments"
+        },
+        {
+          "section": "-50-20",
+          "title": "Cargo Loading Systems"
+        },
+        {
+          "section": "-50-30",
+          "title": "Cargo Related Systems"
+        },
+        {
+          "section": "-50-40",
+          "title": "Available"
+        },
+        {
+          "section": "-50-50",
+          "title": "Accessory Compartments"
+        },
+        {
+          "section": "-50-60",
+          "title": "Insulation"
+        },
+        {
+          "section": "-52-00",
+          "title": "Doors - General"
+        },
+        {
+          "section": "-52-10",
+          "title": "Passenger/Crew"
+        },
+        {
+          "section": "-52-20",
+          "title": "Emergency Exit"
+        },
+        {
+          "section": "-52-30",
+          "title": "Cargo"
+        },
+        {
+          "section": "-52-40",
+          "title": "Service"
+        },
+        {
+          "section": "-52-50",
+          "title": "Fixed Interior"
+        },
+        {
+          "section": "-52-60",
+          "title": "Entrance Stairs"
+        },
+        {
+          "section": "-52-70",
+          "title": "Door Warning"
+        },
+        {
+          "section": "-52-80",
+          "title": "Landing Gear"
+        },
+        {
+          "section": "-53-00",
+          "title": "Fuselage - General"
+        },
+        {
+          "section": "-54-00",
+          "title": "Nacelles/Pylons - General"
+        },
+        {
+          "section": "-54-10",
+          "title": "Nacelle Section"
+        },
+        {
+          "section": "-54-50",
+          "title": "Pylon"
+        },
+        {
+          "section": "-55-00",
+          "title": "Stabilizers - General"
+        },
+        {
+          "section": "-55-10",
+          "title": "Horizontal Stabilizer or Canard"
+        },
+        {
+          "section": "-55-20",
+          "title": "Elevator"
+        },
+        {
+          "section": "-55-30",
+          "title": "Vertical Stabilizer"
+        },
+        {
+          "section": "-55-40",
+          "title": "Rudder"
+        },
+        {
+          "section": "-56-00",
+          "title": "Windows - General"
+        },
+        {
+          "section": "-56-10",
+          "title": "Flight Compartment"
+        },
+        {
+          "section": "-56-20",
+          "title": "Passenger Compartment"
+        },
+        {
+          "section": "-56-30",
+          "title": "Door"
+        },
+        {
+          "section": "-56-40",
+          "title": "Inspection and Observation"
+        },
+        {
+          "section": "-57-00",
+          "title": "Wings - General"
+        },
+        {
+          "section": "-57-10",
+          "title": "Center Wing"
+        },
+        {
+          "section": "-57-20",
+          "title": "Outer Wing"
+        },
+        {
+          "section": "-57-30",
+          "title": "Wing Tip"
+        },
+        {
+          "section": "-57-40",
+          "title": "Leading Edge and Leading Edge Devices"
+        },
+        {
+          "section": "-57-50",
+          "title": "Trailing Edge and Trailing Edge Devices"
+        },
+        {
+          "section": "-57-60",
+          "title": "Ailerons"
+        },
+        {
+          "section": "-57-70",
+          "title": "Spoilers"
+        },
+        {
+          "section": "-57-90",
+          "title": "Wing Folding System"
+        },
+        {
+          "section": "-61-00",
+          "title": "Propellers/Propulsors - General"
+        },
+        {
+          "section": "-61-10",
+          "title": "Propeller Assembly"
+        },
+        {
+          "section": "-61-20",
+          "title": "Controlling"
+        },
+        {
+          "section": "-61-30",
+          "title": "Braking"
+        },
+        {
+          "section": "-61-40",
+          "title": "Indicating"
+        },
+        {
+          "section": "-61-50",
+          "title": "Propulsor Duct"
+        },
+        {
+          "section": "-62-00",
+          "title": "Rotors"
+        },
+        {
+          "section": "-63-00",
+          "title": "Rotor Drives"
+        },
+        {
+          "section": "-64-00",
+          "title": "Tail Rotor"
+        },
+        {
+          "section": "-65-00",
+          "title": "Tail Rotor Drive"
+        },
+        {
+          "section": "-66-00",
+          "title": "Folding Blades/Pylon"
+        },
+        {
+          "section": "-67-00",
+          "title": "Rotors Flight Control"
+        },
+        {
+          "section": "-71-00",
+          "title": "Power Plant - General"
+        },
+        {
+          "section": "-71-10",
+          "title": "Cowling"
+        },
+        {
+          "section": "-71-20",
+          "title": "Mounts"
+        },
+        {
+          "section": "-71-30",
+          "title": "Fire seals"
+        },
+        {
+          "section": "-71-40",
+          "title": "Attach Fittings"
+        },
+        {
+          "section": "-71-50",
+          "title": "Electrical Harness"
+        },
+        {
+          "section": "-71-60",
+          "title": "Air Intakes"
+        },
+        {
+          "section": "-71-70",
+          "title": "Engine Drains"
+        },
+        {
+          "section": "-72-00",
+          "title": "Engine Turbine/Turbo Prop Ducted Fan/Unducted Fan"
+        },
+        {
+          "section": "-72-10",
+          "title": "Reduction Gear, Shaft Section (Turbo-Prop and/or Front Mounted Gear Driven Propulsor)"
+        },
+        {
+          "section": "-72-20",
+          "title": "Air Inlet Section"
+        },
+        {
+          "section": "-72-30",
+          "title": "Compressor Section"
+        },
+        {
+          "section": "-72-40",
+          "title": "Combustion Section"
+        },
+        {
+          "section": "-72-50",
+          "title": "Turbine Section"
+        },
+        {
+          "section": "-72-60",
+          "title": "Accessory Drives"
+        },
+        {
+          "section": "-72-70",
+          "title": "By-pass Section"
+        },
+        {
+          "section": "-72-80",
+          "title": "Propulsor Section (Rear Mounted)"
+        },
+        {
+          "section": "-73-00",
+          "title": "Engine Fuel And Control - General"
+        },
+        {
+          "section": "-73-10",
+          "title": "Distribution"
+        },
+        {
+          "section": "-73-20",
+          "title": "Controlling"
+        },
+        {
+          "section": "-73-30",
+          "title": "Indicating"
+        },
+        {
+          "section": "-74-00",
+          "title": "Ignition - General"
+        },
+        {
+          "section": "-74-10",
+          "title": "Electrical Power Supply"
+        },
+        {
+          "section": "-74-20",
+          "title": "Distribution"
+        },
+        {
+          "section": "-74-30",
+          "title": "Switching"
+        },
+        {
+          "section": "-75-00",
+          "title": "Air - General"
+        },
+        {
+          "section": "-75-10",
+          "title": "Engine Anti-Icing"
+        },
+        {
+          "section": "-75-20",
+          "title": "Cooling"
+        },
+        {
+          "section": "-75-30",
+          "title": "Compressor Control"
+        },
+        {
+          "section": "-75-40",
+          "title": "Indicating"
+        },
+        {
+          "section": "-76-00",
+          "title": "Engine Controls - General"
+        },
+        {
+          "section": "-76-10",
+          "title": "Power Control"
+        },
+        {
+          "section": "-76-20",
+          "title": "Emergency Shutdown"
+        },
+        {
+          "section": "-77-00",
+          "title": "Engine Indicating - General"
+        },
+        {
+          "section": "-77-10",
+          "title": "Power"
+        },
+        {
+          "section": "-77-20",
+          "title": "Temperature"
+        },
+        {
+          "section": "-77-30",
+          "title": "Analyzers"
+        },
+        {
+          "section": "-77-40",
+          "title": "Integrated Engine Instrument Systems"
+        },
+        {
+          "section": "-78-00",
+          "title": "Exhaust - General"
+        },
+        {
+          "section": "-78-10",
+          "title": "Collector/Nozzle"
+        },
+        {
+          "section": "-78-20",
+          "title": "Noise Suppressor"
+        },
+        {
+          "section": "-78-30",
+          "title": "Thrust Reverser"
+        },
+        {
+          "section": "-78-40",
+          "title": "Supplementary Air"
+        },
+        {
+          "section": "-79-00",
+          "title": "Oil - General"
+        },
+        {
+          "section": "-79-10",
+          "title": "Storage"
+        },
+        {
+          "section": "-79-30",
+          "title": "Indicating"
+        },
+        {
+          "section": "-80-00",
+          "title": "Starting - General"
+        },
+        {
+          "section": "-80-10",
+          "title": "Cranking"
+        }
+      ]
+    },
+    {
+      "chapter_number": "98",
+      "chapter_name": "*Reserved for Airline Use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "99",
+      "chapter_name": "*Unassigned",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "100",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "101",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "102",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "103",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "104",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "105",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "106",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "107",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "108",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "109",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "110",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "111",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "112",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "113",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "114",
+      "chapter_name": "*Do not use",
+      "category": "POWER PLANT",
+      "sections": []
+    },
+    {
+      "chapter_number": "115",
+      "chapter_name": "FLIGHT SIMULATOR SYSTEMS",
+      "category": "POWER PLANT",
+      "sections": []
+    }
+  ]
+}
